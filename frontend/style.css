@@ -1,0 +1,395 @@
+/* Estilos generales */
+:root {
+    --primary-color: #f7a072; /* Color principal */
+    --secondary-color: #f6e6e6; /* Blanco cálido para texto */
+    --background-color: #1a1a2e; /* Azul oscuro cinematográfico */
+    --card-background: #2a2a47; /* Un tono más claro para las tarjetas */
+    --text-color-light: #f6e6e6; /* Texto claro */
+    --text-color-dark: #333; /* Texto oscuro */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color-light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* Encabezado */
+.main-header {
+    background-color: var(--card-background);
+    color: var(--secondary-color);
+    padding: 20px 0;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.site-title a {
+    color: var(--primary-color);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav li {
+    margin-left: 25px;
+}
+
+.main-nav a {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.main-nav a:hover {
+    color: var(--primary-color);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px 0 0 5px;
+    background-color: #fff;
+    color: var(--text-color-dark);
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    border: 1px solid var(--primary-color);
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #e59160;
+}
+
+/* Reseñas destacadas */
+.featured-reviews-section {
+    padding-bottom: 40px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.review-card {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.review-link {
+    display: block;
+    color: inherit;
+}
+
+.movie-poster {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.review-info {
+    padding: 20px;
+}
+
+.review-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.review-info p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.read-more {
+    font-weight: 600;
+}
+
+/* Géneros */
+.genres-section {
+    padding-bottom: 40px;
+}
+
+.genres-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.genre-card {
+    background-color: var(--card-background);
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid var(--primary-color);
+}
+
+.genre-card:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+/* Pie de página */
+.site-footer {
+    background-color: var(--card-background);
+    padding: 30px 0;
+    border-top: 2px solid var(--primary-color);
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: var(--secondary-color);
+}
+
+/* Estilos de la página de reseña individual */
+.review-container {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.review-header {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.movie-poster-large {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.movie-info-details h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.movie-info-details p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--secondary-color);
+}
+
+.rating-display {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.rating-stars {
+    color: gold;
+}
+
+.review-body {
+    border-top: 1px solid #444;
+    padding-top: 30px;
+}
+
+.review-body h3 {
+    font-size: 2rem;
+}
+
+.review-body p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.tags {
+    margin-top: 30px;
+}
+
+.tags h4 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin: 5px;
+}
+
+/* Comentarios (opcional) */
+.comments-section {
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    padding-top: 30px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    background-color: #f0f0f0;
+    color: var(--text-color-dark);
+    font-family: 'Poppins', sans-serif;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment {
+    background-color: var(--card-background);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-title, .main-nav {
+        margin-bottom: 15px;
+    }
+
+    .main-nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .main-nav li {
+        margin: 5px 10px;
+    }
+
+    .review-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .movie-poster-large {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}

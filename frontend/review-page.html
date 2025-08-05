@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseña: Título de la Película</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="site-title"><a href="index.html">Reseñas de peliculas</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Películas</a></li>
+                    <li><a href="#">Géneros</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar película, actor, director...">
+                <button id="searchButton">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container review-container">
+        
+        <article class="movie-review">
+            <header class="review-header">
+                <img src="https://via.placeholder.com/300x450?text=Aquí+va+la+imagen+del+cartel" alt="Cartel de la película" class="movie-poster-large">
+                <div class="movie-info-details">
+                    <h1>Título de la Película</h1>
+                    <p><strong>Año:</strong> 2024</p>
+                    <p><strong>Director:</strong> Nombre del Director</p>
+                    <p><strong>Reparto:</strong> Actor 1, Actor 2, Actor 3</p>
+                    <p><strong>Género:</strong> Género, Subgénero</p>
+                    <p><strong>Sinopsis:</strong> Aquí va la breve sinopsis de la película, resumiendo la trama principal sin spoilers.</p>
+                    <div class="rating-display">
+                        <span class="rating-stars">★★★★☆</span>
+                        <span>8.5/10</span>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="review-body">
+                <h3>Análisis Completo</h3>
+                <p>Aquí va el texto completo de la reseña, detallando aspectos como la dirección, las actuaciones, la fotografía, la banda sonora y el guion. Explica por qué te gustó o no la película y qué la hace especial.</p>
+                <p>Puedes incluir múltiples párrafos para una reseña más extensa, dividiendo tus ideas y argumentos.</p>
+                
+                <div class="tags">
+                    <h4>Etiquetas:</h4>
+                    <span class="tag">Suspenso</span>
+                    <span class="tag">Intriga</span>
+                    <span class="tag">Actuaciones sólidas</span>
+                </div>
+            </div>
+
+            <section class="comments-section">
+                <h3>Comentarios</h3>
+                <div class="comment-form">
+                    <textarea placeholder="Deja tu comentario..."></textarea>
+                    <button>Enviar Comentario</button>
+                </div>
+                <div class="comment-list">
+                    <div class="comment">
+                        <p><strong>Usuario123:</strong> ¡Gran reseña! Coincido completamente contigo.</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>Cinefilo25:</strong> A mí no me gustó tanto el final, pero las actuaciones son increíbles.</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Cartelera Yucateca. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <a href="#">Acerca de nosotros</a>
+        </div>
+    </footer>
+
+    <script src="review-script.js"></script>
+</body>
+</html>

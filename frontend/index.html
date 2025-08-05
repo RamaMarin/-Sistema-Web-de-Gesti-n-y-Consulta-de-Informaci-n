@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas de peliculas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="site-title"><a href="index.html">Reseñas de peliculas</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#featured-reviews">Películas</a></li>
+                    <li><a href="#genres-section">Géneros</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar película, actor, director...">
+                <button id="searchButton">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="featured-reviews" class="featured-reviews-section">
+            <h2>Reseñas Destacadas</h2>
+            <div class="reviews-grid">
+                
+                <article class="review-card">
+                    <a href="review-page.html" class="review-link">
+                        <img src="https://via.placeholder.com/300x450?text=Aquí+va+la+imagen" alt="Cartel de la película" class="movie-poster">
+                        <div class="review-info">
+                            <h3>Título de la película 1</h3>
+                            <p>Aquí va un breve extracto de la reseña que invite al usuario a leer más. Habla de la trama y el impacto...</p>
+                            <span class="read-more">Leer reseña completa ➡️</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="review-card">
+                    <a href="review-page.html" class="review-link">
+                        <img src="https://via.placeholder.com/300x450?text=Aquí+va+la+imagen" alt="Cartel de la película" class="movie-poster">
+                        <div class="review-info">
+                            <h3>Título de la película 2</h3>
+                            <p>Aquí va un breve extracto de la reseña que invite al usuario a leer más. Habla de la trama y el impacto...</p>
+                            <span class="read-more">Leer reseña completa ➡️</span>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="review-card">
+                    <a href="review-page.html" class="review-link">
+                        <img src="https://via.placeholder.com/300x450?text=Aquí+va+la+imagen" alt="Cartel de la película" class="movie-poster">
+                        <div class="review-info">
+                            <h3>Título de la película 3</h3>
+                            <p>Aquí va un breve extracto de la reseña que invite al usuario a leer más. Habla de la trama y el impacto...</p>
+                            <span class="read-more">Leer reseña completa ➡️</span>
+                        </div>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="genres-section" class="genres-section">
+            <h2>Explora por Género</h2>
+            <div class="genres-grid">
+                <a href="#" class="genre-card">Acción</a>
+                <a href="#" class="genre-card">Comedia</a>
+                <a href="#" class="genre-card">Drama</a>
+                <a href="#" class="genre-card">Ciencia Ficción</a>
+                <a href="#" class="genre-card">Terror</a>
+                <a href="#" class="genre-card">Animación</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Reseñas de peliculas. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <a href="#">Acerca de nosotros</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
