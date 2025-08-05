@@ -20,8 +20,37 @@ A dynamic movie review website built with a modern and attractive aesthetic. Thi
 * **RESTful API Backend:** A robust API that enables CRUD (Create, Read, Update, Delete) operations on the database.
 
 ## Technologies Used
-Frontend: HTML, CSS, JavaScript (Vanilla JS).
 
-Backend: Node.js, Express.js.
+* **Frontend:** HTML, CSS, JavaScript (Vanilla JS).
 
-Database: MongoDB (using Mongoose for schema definition).
+* **Backend:** Node.js, Express.js.
+
+* **Database:** MongoDB (using Mongoose for schema definition).
+
+## Project Structure
+
+The application is divided into two main directories:
+
+``` bash
+
+mi-proyecto-reseñas/
+├── backend/
+│   ├── models/
+│   │   └── Pelicula.js
+│   ├── node_modules/
+│   ├── package.json
+│   └── server.js
+└── frontend/
+    ├── index.html
+    ├── review-page.html
+    ├── style.css
+    ├── script.js
+    └── review-script.js
+
+```
+
+## Installation and Local Setup
+
+Follow these steps to get the project up and running on your local machine.
+
+
